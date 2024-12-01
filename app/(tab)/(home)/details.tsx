@@ -1,13 +1,9 @@
-import { Link } from 'expo-router';
 import { View, Text, StyleSheet } from 'react-native';
 
 export default function Tab() {
   return (
     <View style={styles.container}>
-      <Text>Tab [Home]</Text>
-
-      <Link href={'/about'}>Go to about</Link>
-      <Link href={'/details'}>Click details</Link>
+      <Text>Tab [Details]</Text>
     </View>
   );
 }

@@ -4,11 +4,12 @@ import React from 'react'
 
 export default function TabRoot() {
   return (
-    <Tabs screenOptions={{ tabBarActiveTintColor: 'tomato' }}>
+    <Tabs screenOptions={{ tabBarActiveTintColor: 'tomato' }} >
       <Tabs.Screen
-        name="index"
+        name="(home)"
         options={{
           title: 'Home',
+          headerShown: false,
           tabBarIcon: ({ color }) => <FontAwesome size={28} name="home" color={color} />,
         }}
       />
@@ -17,13 +18,6 @@ export default function TabRoot() {
         options={{
           title: 'Settings',
           tabBarIcon: ({ color }) => <FontAwesome size={28} name="cog" color={color} />,
-        }}
-      />
-      <Tabs.Screen
-        name="profile"
-        options={{
-          title: 'Profile',
-          tabBarIcon: ({ color }) => <FontAwesome size={28} name="user" color={color} />,
         }}
       />
     </Tabs>
