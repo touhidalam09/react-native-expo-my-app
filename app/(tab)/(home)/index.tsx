@@ -42,6 +42,9 @@ export default function Tab() {
         View user details
       </Link>
       <Text>Count: {count}</Text>
+      <Link href="/modal" style={styles.link}>
+        Open modal
+      </Link>
     </View>
   );
 }
@@ -55,5 +58,8 @@ const styles = StyleSheet.create({
   image: {
     width: 50,
     height: 50,
+  },link: {
+    paddingTop: 20,
+    fontSize: 20,
   },
 });
